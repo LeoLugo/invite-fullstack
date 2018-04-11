@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Invite Lists</title>
+	<link rel="stylesheet" href="/styles/main.css" />
+</head>
+<body>
+
+	<div class="container">
+		<div class="count"><div class="counter">Going:{{going}}</div><div class="counter">Not Going:{{notgoing}}</div></div>
+		<div class="card">
+			<div class="pic"><img src={{pic}}></div>
+			<div class="info"><h3>Name:</h3> {{name}}<br><h3>Phone:</h3> {{phone}}<br><h3>Email:</h3> {{email}}</div>
+			<div class="formcontainer">
+				<form action="/going" method="post">
+					<input type="hidden" name="name" value="{{name}}">
+					<input type="hidden" name="phone" value="{{phone}}">
+					<input type="hidden" name="email" value="{{email}}">
+					<input type="hidden" name="pic" value="{{pic}}">
+					<button type="submit">Going</button>
+				</form>
+				<form action="/notgoing" method="post">
+					<input type="hidden" name="name" value="{{name}}">
+					<input type="hidden" name="phone" value="{{phone}}">
+					<input type="hidden" name="email" value="{{email}}">
+					<input type="hidden" name="pic" value="{{pic}}">
+					<button type="submit">Not Going</button>
+				</form>
+				<a href="/going">View Going</a>
+				<a href="/notgoing">View Not Going</a>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

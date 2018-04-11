@@ -1,0 +1,49 @@
+.container {
+	width: 400px;
+	height: 600px;
+	margin: auto;
+	margin-top: 200px;
+}
+.count {
+	display: flex;
+	flex-wrap: wrap;
+}
+.counter {
+	width: 200px;
+	height: 30px;
+	text-align: center;
+}
+.card {
+	background-color: #EBEBEB;
+	border: 1px solid #DCDCDC;
+}
+.pic {
+	width: 400px;
+	height: 200px;
+	border-bottom: 1px solid #DCDCDC;
+	position: relative;
+}
+img {
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 50%;
+	position: absolute;
+	left: 31%;
+	top: 18%;
+}
+.info {
+	border-bottom: 1px solid #DCDCDC;
+	width: 400px;
+	height: 200px;
+	text-align: left;
+	line-height: 50px;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+.formcontainer {
+	width: 400px;
+	height: 100px;
+}
+h3 {
+	display: inline;
+}

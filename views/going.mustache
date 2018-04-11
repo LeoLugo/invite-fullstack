@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Going</title>
+	<link rel="stylesheet" href="/styles/either.css">
+</head>
+<body>
+	<a href="/">Go Back</a>
+	<div class="container">
+		{{#going}}
+			<div class="card">
+				<div class="pic"><img src={{pic}}></div>
+				<div class="info"><h3>Name:</h3> {{name}}<br><h3>Phone:</h3> {{phone}}<br><h3>Email:</h3> {{email}}</div>
+			</div>
+		{{/going}}
+	</div>
+</body>
+</html>
