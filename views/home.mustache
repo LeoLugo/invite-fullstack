@@ -18,17 +18,17 @@
 					<input type="hidden" name="phone" value="{{phone}}">
 					<input type="hidden" name="email" value="{{email}}">
 					<input type="hidden" name="pic" value="{{pic}}">
-					<button type="submit">Going</button>
+					<button type="submit" class="goingbutton">Going</button>
 				</form>
 				<form action="/notgoing" method="post">
 					<input type="hidden" name="name" value="{{name}}">
 					<input type="hidden" name="phone" value="{{phone}}">
 					<input type="hidden" name="email" value="{{email}}">
 					<input type="hidden" name="pic" value="{{pic}}">
-					<button type="submit">Not Going</button>
+					<button type="submit" class="notbutton">Not Going</button>
 				</form>
-				<a href="/going">View Going</a>
-				<a href="/notgoing">View Not Going</a>
+				<a href="/going" class="viewgoing">View Going</a>
+				<a href="/notgoing" class="viewnot">View Not Going</a>
 			</div>
 		</div>
 	</div>
